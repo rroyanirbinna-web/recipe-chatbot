@@ -73,3 +73,10 @@ replies are forgotten, and that **Start over** clears the memory.
   in a database.
 - Recipes are AI-generated, so check allergens, cooking times and food safety yourself.
 - The model name (`gemini-3.8-flash`) is a constant at the top of `recipe_app.py`.
+
+## How this was built
+
+I wrote the original app: the form, the prompt builder and streaming the recipe from Gemini
+(the first commit). The conversation memory, retries and timeouts, the tests and this README were
+added afterwards using [Claude Code](https://claude.com/claude-code) (the second commit, which
+lists Claude as co-author).
